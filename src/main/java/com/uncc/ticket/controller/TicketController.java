@@ -55,7 +55,6 @@ public class TicketController {
         // Code here
         model.addAttribute("ticket", ticketService.findById(id));
         return "tickets/storeTicket";
-        //return "redirect:/"; //Remove this line
     }
 
     @RequestMapping(value = "/tickets/delete/{id}", method = RequestMethod.GET)
